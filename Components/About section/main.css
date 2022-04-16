@@ -1,0 +1,122 @@
+/*===========================*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.uikit-about-section-4 {
+  height: 100vh;
+  position: relative;
+}
+
+.uikit-about-section-4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 0;
+  background: url(https://picsum.photos/id/1019/1600/900);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.uikit-about-section-4 .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: #ee2515;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee2515), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #ee2515 0%, rgba(0, 0, 0, 0) 100%);
+  color: #fff;
+  padding: 1em;
+  height: 90%;
+  width: 40%;
+  -webkit-box-shadow: 5px 3px 38px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 3px 38px -8px rgba(0, 0, 0, 0.75);
+  margin-left: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.uikit-about-section-4 .about-content p {
+  max-width: 35em;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.uikit-about-section-4 .about-number {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 4em;
+  margin: 0.2em 0.2em 0 0;
+  z-index: 2;
+}
+
+.uikit-about-section-4 .about-number h1 {
+  margin: 0;
+}
+
+.uikit-about-section-4:nth-child(2n) .about-content {
+  left: initial;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: initial;
+  margin-right: 1.5em;
+}
+
+.uikit-about-section-4:nth-child(2n) .about-number {
+  left: 0;
+  top: 0;
+  margin: 0.2em 0 0 0.2em;
+}
+
+.uikit-about-section-4:nth-child(2n)::before {
+  background: url(https://picsum.photos/id/1021/1600/900);
+}
+
+@media screen and (max-width: 550px) {
+  .uikit-about-section-4 .about-content {
+    width: 80%;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .uikit-about-section-4 .about-number {
+    margin-right: 0.6em;
+  }
+  .uikit-about-section-4:nth-child(2n) .about-number {
+    margin-right: initial;
+    margin-left: 0.6em;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .uikit-about-section-4 {
+    height: 30em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

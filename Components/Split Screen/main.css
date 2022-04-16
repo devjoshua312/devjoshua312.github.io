@@ -1,0 +1,178 @@
+/*===========================*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Split Screen Styles start here*/
+.uikit-split-screen-1 {
+  position: relative;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.uikit-split-screen-1 .layer {
+  background: #000;
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.uikit-split-screen-1 .layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+}
+
+.uikit-split-screen-1 .layer .content-body {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  text-align: center;
+  color: #222;
+}
+
+.uikit-split-screen-1 .layer img {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.uikit-split-screen-1 .layer h1 {
+  font-size: 2em;
+}
+
+.uikit-split-screen-1 .right {
+  background: url(images/image2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.uikit-split-screen-1 .right h1 {
+  color: #fd1100;
+}
+
+.uikit-split-screen-1 .right .btn {
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  background: #fd1100;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.uikit-split-screen-1 .right .btn:hover {
+  background: #d40e00;
+}
+
+.uikit-split-screen-1 .left {
+  background-repeat: no-repeat;
+  color: #222;
+  z-index: 2;
+  width: 50vw;
+}
+
+.uikit-split-screen-1 .left .content-body {
+  left: 20%;
+  color: #fff;
+}
+
+.uikit-split-screen-1 .left .media-icons {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.uikit-split-screen-1 .left .media-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.uikit-split-screen-1 .left .media-icons ul li {
+  margin: 0 0.5em;
+  display: inline-block;
+}
+
+.uikit-split-screen-1 .left .media-icons ul li a {
+  color: #fff;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.uikit-split-screen-1 .handle {
+  position: absolute;
+  height: 100%;
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #fd1100;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 200%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.uikit-split-screen-1 .left {
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.uikit-split-screen-1 .left .content-wrap {
+  margin-left: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .uikit-split-screen-1 {
+    font-size: 13px;
+  }
+  .uikit-split-screen-1 .right .content-body {
+    width: 60%;
+  }
+  .uikit-split-screen-1 .left .media-icons li {
+    display: block;
+    margin: 0.5em 0;
+  }
+  .uikit-split-screen-1 .left .content-body {
+    width: 40%;
+    left: 25%;
+    z-index: 3;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .uikit-split-screen-1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .uikit-split-screen-1 {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

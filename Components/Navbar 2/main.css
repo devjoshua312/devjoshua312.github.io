@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 360vh;
+}
+
+.uikit-navbar-5 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  color: #4e5674;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  -webkit-box-shadow: 0px 8px 22px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 22px -4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.uikit-navbar-5 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.uikit-navbar-5 .icon {
+  display: inline-block;
+  margin: 0 0.4em;
+  font-size: 1.1em;
+  color: #fff;
+  color: #4e5674;
+  font-size: 1.5em;
+  -webkit-transform: translateY(0.1em);
+          transform: translateY(0.1em);
+}
+
+.uikit-navbar-5 h2 {
+  margin: 0;
+}
+
+.uikit-navbar-5 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.uikit-navbar-5 ul li {
+  display: inline-block;
+  margin: 0 0.7em;
+}
+
+.uikit-navbar-5 ul li a {
+  color: #4e5674;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+.uikit-navbar-5 .nav-5-active {
+  height: initial;
+}
+
+.uikit-navbar-5 .nav-menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.uikit-navbar-5 .nav-links .icon {
+  display: none;
+}
+
+.uikit-navbar-5 .sign-in {
+  display: block;
+}
+
+.uikit-nav-5-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-animation: uiKitNavbar5fadeIn 0.4s ease-in;
+          animation: uiKitNavbar5fadeIn 0.4s ease-in;
+}
+
+@media screen and (max-width: 900px) {
+  .uikit-navbar-5 .nav-links {
+    text-align: left;
+    position: absolute;
+    top: 3em;
+    background: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding: 0 1em;
+    display: block;
+    -webkit-box-shadow: 0px 8px 22px -4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 22px -4px rgba(0, 0, 0, 0.2);
+  }
+  .uikit-navbar-5 .nav-links li {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .uikit-navbar-5 .nav-links li:nth-child(1) {
+    margin-top: 1em;
+  }
+  .uikit-navbar-5 .nav-links .search {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .uikit-navbar-5 .nav-5-active {
+    height: 13.5em;
+  }
+  .uikit-navbar-5 .sign-in {
+    display: none;
+  }
+  .uikit-navbar-5 .nav-menu-btn {
+    display: block;
+  }
+  .uikit-navbar-5 .nav-links .icon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .uikit-navbar-5 .nav-links {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .uikit-navbar-5 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .uikit-navbar-5 .nav-5-active {
+    height: 8em;
+    overflow-y: scroll;
+    padding: 1em;
+  }
+}
+
+@-webkit-keyframes uiKitNavbar5fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes uiKitNavbar5fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

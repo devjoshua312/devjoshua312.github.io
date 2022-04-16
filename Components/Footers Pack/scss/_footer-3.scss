@@ -1,0 +1,125 @@
+#uikit-footer-3 {
+    background: #3a3b3f;
+    color: #c4c4c4;
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-gap: 2em;
+        padding: 2em;
+
+        h2 {
+            color: #fff;
+        }
+
+        .f-col-1 {
+            p {
+                max-width: 35em;
+                line-height: 23px;
+                font-size: 0.9em;
+            }
+        }
+
+        .f-col-2 {
+            text-align: center;
+
+            .nav-links {
+                padding: 0;
+                list-style: none;
+
+                li {
+                    display: block;
+                    margin: 1em 0;
+
+                    a {
+                        text-transform: uppercase;
+                        font-size: 1em;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #c4c4c4;
+                        letter-spacing: 1px;
+                        transition: 0.3s;
+    
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f-col-3 {
+            justify-self: end;
+
+            p {
+                max-width: 25em;
+            }
+
+            form {margin-top: 2em;}
+
+            input {
+                background: darken(#3a3b3f, 5%);
+                width: 17em;
+                height: 3em;
+                padding: 0;
+                padding-left: 0.6em;
+                font-size: 1em;
+                border: 0;
+                color: #fff;
+            }
+
+            button {
+                height: 3em;
+                width: 3em;
+                padding: 0 !important;
+                margin: 0;
+                transition: 0.4s;
+                border: 0;
+                background: #c4c4c4;
+                cursor: pointer;
+                font-size: 1em;
+                color: #3a3b3f;
+
+                &:hover {
+                    background: darken(#c4c4c4, 5%);
+                    border: 0;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background: darken(#3a3b3f, 15%);
+        padding: 1em 2em;
+        text-align: center;
+        color: lighten(#3a3b3f, 20%);
+        font-size: 0.9em;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #uikit-footer-3 {
+        .footer-top {
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            .f-col-1, .f-col-3 {
+                justify-self: center;
+            }
+            
+            .f-col-1 h2 {
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #uikit-footer-3 {
+        font-size: 13px;
+
+        .footer-top .f-col-3 form input {
+            width: 10em;
+        }
+    }
+}

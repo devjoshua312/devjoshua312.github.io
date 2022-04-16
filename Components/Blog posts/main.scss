@@ -1,0 +1,143 @@
+@import 'mixins';
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #d4d4d4;
+}
+
+.uikit-blog-posts-2 {
+  max-width: 50em;
+  padding: 3em 0;
+  @include marginAuto;
+
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  .blog-post {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin: 3em 0;
+
+    img {
+      width: 33%;
+      height: 100%;
+    }
+    .blog-post-content {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+
+      .categories a {
+        color: #e6a857;
+        margin: 0 0.2em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h2 {
+        margin: 0.2em 0 0 0;
+        font-size: 2em;
+      }
+      p {
+        @include paragraph;
+        margin-top: 0.5em;
+      }
+      .btn {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        padding: 0.3em 0;
+      }
+      .blog-post-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            margin: 0 0.3em;
+            display: inline-block;
+  
+            a {
+              color: #000;
+              font-size: 1.4em;
+
+              &:hover {
+                color: #e6a857;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //Additional blog post 2 styles
+  .post-2 {
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .uikit-blog-posts-2 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .uikit-blog-posts-2 {
+    font-size: 14px;
+
+    .blog-post {
+      flex-direction: column;
+      text-align: center;
+      align-content: center;
+      width: 25em;
+      @include marginAuto;
+
+      img {
+        width: 100%;
+      }
+
+      .blog-post-content {
+        padding: 1.5em;
+        p {
+          @include marginAuto;
+        }
+        .blog-post-footer {
+          flex-direction: column;
+          ul {
+            margin-top: 1.5em;
+          }
+        }
+      }  
+    }
+    .post-2 .blog-post-content {
+      padding: 1em 1em 0 1em;
+      .btn {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .uikit-blog-posts-2 {
+    font-size: 13px;
+    .blog-post {
+      width: 95%;
+    }
+  } 
+}

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #333;
+  padding-bottom: 8em;
+}
+
+.counters-section-space {
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.uikit-counters-1 {
+  background: #000;
+  color: #fff;
+  padding: 3.5em 2em;
+}
+
+.uikit-counters-1 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.uikit-counters-1 h3 {
+  color: #979797;
+}
+
+.uikit-counters-1 .counter-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr);
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  text-align: center;
+}
+
+.uikit-counters-1 i {
+  color: #2dcf84;
+  margin-bottom: 5px;
+}
+
+.uikit-counters-1 .counter {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  .uikit-counters-1 .counter-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .uikit-counters-1 .counter-container > div {
+    border-bottom: 1px #2dcf84 solid;
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

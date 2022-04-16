@@ -1,0 +1,39 @@
+@import 'mixins';
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: $secondary-color;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $primary-color;
+}
+
+//Elements
+@import 'header';
+@import 'navbar';
+@import 'heading';
+@import 'about';
+@import 'counters';
+@import 'grid';
+@import 'form';
+@import 'testimonials';
+@import 'blog';
+@import 'slider';
+@import 'footer';
+

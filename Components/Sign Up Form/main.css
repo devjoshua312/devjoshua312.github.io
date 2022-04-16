@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/*===========================*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.uikit-form-5 {
+  background: #1a2027;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.uikit-form-5 .form-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+  width: 22em;
+  background: #202730;
+  padding: 2em 3em;
+  border-radius: 20px;
+}
+
+.uikit-form-5 .form-container h1 {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 1.8em;
+}
+
+.uikit-form-5 .form-container .group {
+  margin: 1.5em 0;
+  color: #e4e4e4;
+  position: relative;
+  text-align: left;
+}
+
+.uikit-form-5 .form-container .group .field {
+  display: block;
+  border: none;
+  margin: 0;
+  width: 100%;
+  height: 3em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: transparent;
+  color: #fff;
+  padding: 0;
+  background: #262e39;
+  border-radius: 3em;
+  padding: 0 1.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.uikit-form-5 .form-container .group label {
+  position: absolute;
+  top: 1em;
+  left: 1.8em;
+  font-size: 0.8em;
+  font-weight: 500;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.uikit-form-5 .form-container .group .field:focus, .uikit-form-5 .form-container .group button:focus {
+  outline: none;
+}
+
+.uikit-form-5 .form-container .group .field:focus ~ label {
+  top: -1.5em;
+  font-size: 0.7em;
+  color: #0075ff;
+}
+
+.uikit-form-5 .form-container .submit-btn {
+  background: #0075ff;
+  color: #fff;
+  outline: none;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  margin: 1.5em 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3em;
+}
+
+.uikit-form-5 .form-container .submit-btn:hover {
+  background: #0067e0;
+}
+
+.uikit-form-5 .form-container .form-bottom-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.uikit-form-5 .form-container .form-bottom-options a, .uikit-form-5 .form-container .form-bottom-options span {
+  color: #e4e4e4;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.uikit-form-5 .form-container .form-bottom-options a {
+  text-decoration: none;
+}
+
+.uikit-form-5 .form-container .form-bottom-options a:hover {
+  text-decoration: underline;
+}
+
+.uikit-form-5 .form-container .form-link {
+  display: block;
+  text-align: center;
+}
+
+.uikit-form-5 .form-container .form-link a, .uikit-form-5 .form-container .form-link span {
+  color: #e4e4e4;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.uikit-form-5 .form-container .form-link a {
+  color: #0075ff;
+  text-decoration: none;
+}
+
+.uikit-form-5 .form-container .form-link a:hover {
+  color: #fff;
+}
+
+.label-stay {
+  top: -1.5em !important;
+  font-size: 0.7em;
+  color: #0075ff;
+}
+
+@media screen and (min-width: 1000px) {
+  .uikit-form-5 .form-container {
+    font-size: 18px;
+  }
+  .uikit-form-5 .form-container .group .field {
+    font-size: 1em;
+  }
+  .uikit-form-5 .form-container .group label {
+    top: 1.3em;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .uikit-form-5 {
+    height: 50em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .uikit-form-5 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .uikit-form-5 {
+    font-size: 13px;
+  }
+  .uikit-form-5 .form-container {
+    width: 70%;
+    padding: 2em;
+  }
+  .uikit-form-5 .form-container .submit-btn {
+    padding: 0.7em;
+  }
+  .uikit-form-5 .form-container .group label {
+    top: 1.4em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

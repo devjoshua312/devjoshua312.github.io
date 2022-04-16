@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+}
+
+.scroll-down-space {
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.uikit-progress-circles-2 {
+  padding-bottom: 10em;
+}
+
+.uikit-progress-circles-2 .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uikit-progress-circles-2 .progress-card {
+  display: inline-block;
+  text-align: center;
+}
+
+.uikit-progress-circles-2 .progress-card h5 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.uikit-progress-circles-2 .progress-circle {
+  position: relative;
+  background: transparent;
+  border: #1b1b1b 8px solid;
+  width: 8em;
+  height: 8em;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 1em;
+}
+
+.uikit-progress-circles-2 .progress-circle .progress {
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  bottom: -100%;
+  background: #335bf4;
+  background: -webkit-gradient(linear, left bottom, left top, from(#335bf4), to(#16ff86));
+  background: linear-gradient(0deg, #335bf4 0%, #16ff86 100%);
+}
+
+.uikit-progress-circles-2 .progress-content {
+  background: #0f0f0f;
+  background: -webkit-gradient(linear, left bottom, left top, from(#080808), to(#111111));
+  background: linear-gradient(0deg, #080808 0%, #111111 100%);
+  width: 7.6em;
+  height: 7.6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.uikit-progress-circles-2 .progress-content h5 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  .uikit-progress-circles-2 .progress-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .uikit-progress-circles-2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .uikit-progress-circles-2 {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

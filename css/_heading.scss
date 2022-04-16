@@ -1,0 +1,47 @@
+/*Heading styles start here*/
+.uikit-heading-7 {
+  background: $secondary-color;
+  padding: 4em 1em;
+  text-align: center;
+
+  h1 {
+    font-size: 2.4em;
+    margin: 0;
+    letter-spacing: 1px;
+    color: $primary-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  span {
+    background: $primary-color;
+    color: $btn-text-color;
+    border-radius: 50%;
+    padding: 0.1em 0.4em;
+    font-size: 0.6em;
+    margin-bottom: 0.7em;
+  }
+
+  p {
+    max-width: 50em;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    color: $secondary-text-color;
+  }
+}
+
+.heading-7-b {
+  background: darken($secondary-color, 3%);
+}
+
+@media screen and (max-width: 380px) {
+  .uikit-heading-7 {
+    font-size: 14px;
+  }
+}

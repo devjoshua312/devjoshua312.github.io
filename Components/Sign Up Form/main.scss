@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import 'mixins';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+//Form styles begin here
+.uikit-form-5 {
+  background: darken(#202730, 3%);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+
+  .form-container {
+    position: absolute;
+    @include center;
+    z-index: 3;
+    text-align: center;
+    width: 22em;
+    background: #202730;
+    padding: 2em 3em;
+    border-radius: 20px;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 1.6em;
+      letter-spacing: 3px;
+      color: #fff;
+      margin-bottom: 1.8em;
+    }
+  
+    .group {
+      margin: 1.5em 0;
+      color: #e4e4e4;
+      position: relative;
+      text-align: left;
+  
+      .field {
+        display: block;
+        border: none;
+        margin: 0;
+        width: 100%;
+        height: 3em;
+        transition: 0.3s;
+        background: transparent;
+        color: #fff;
+        padding: 0;
+        background: lighten(#202730, 3%);
+        border-radius: 3em;
+        padding: 0 1.5em;
+        box-sizing: border-box;
+      }
+  
+      label {
+        position: absolute;
+        top: 1em;
+        left: 1.8em;
+        font-size: 0.8em;
+        font-weight: 500;
+        pointer-events: none;
+        transition: 0.3s;
+      }
+      
+      .field:focus, button:focus {
+        outline: none;
+      }
+      
+      .field:focus ~ label {
+        top: -1.5em;
+        font-size: 0.7em;
+        color: #0075ff;
+      }
+    }
+    .submit-btn {
+      background: #0075ff;
+      color: #fff;
+      outline: none;
+      padding: 1em;
+      width: 100%;
+      border: none;
+      margin: 1.5em 0;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 3em;
+
+      &:hover {
+        background: darken(#0075ff, 6%);
+      }
+    }
+    .form-bottom-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+
+      a, span {
+        color: #e4e4e4;
+        font-size: 0.9em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .form-link {
+      display: block;
+      text-align: center;
+    
+      a, span {
+        color: #e4e4e4;
+        font-size: 0.9em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      a {
+        color: #0075ff;
+        text-decoration: none;
+        &:hover { color: #fff; }
+      }
+    } 
+  }
+}
+
+//style for js
+.label-stay {
+  top: -1.5em !important;
+  font-size: 0.7em;
+  color: #0075ff;
+}
+
+@media screen and (min-width: 1000px) {
+  .uikit-form-5 .form-container {
+    font-size: 18px;
+    .group {
+      .field {
+        font-size: 1em;
+      }
+      label {
+        top: 1.3em;
+      }
+    } 
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .uikit-form-5 {
+    height: 50em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .uikit-form-5 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .uikit-form-5 {
+    font-size: 13px;
+    .form-container {
+      width: 70%;
+      padding: 2em;
+
+      .submit-btn {
+        padding: 0.7em;
+      }
+
+      .group label {
+        top: 1.4em;
+      }
+    }
+  } 
+}
+
+
+

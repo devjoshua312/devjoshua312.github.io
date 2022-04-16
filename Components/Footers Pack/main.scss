@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import 'scss/footer-1';
+@import 'scss/footer-2';
+@import 'scss/footer-3';
+@import 'scss/footer-4';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5em;
+}
+
+.space {
+    min-height: 10em;
+}
+//Basic page reset styles

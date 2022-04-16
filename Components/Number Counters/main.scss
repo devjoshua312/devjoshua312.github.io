@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    padding-bottom: 8em;
+}
+.counters-section-space {
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+//Counter styles start here
+.uikit-counters-1 {
+	background: #000;
+	color: #fff;
+	padding: 3.5em 2em;
+    
+    & * {
+        box-sizing: border-box;
+	    margin: 0;
+	    padding: 0;
+    }
+
+    h3 {
+        color: #979797;
+    }
+
+	.counter-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2em;
+		text-align: center;
+	}
+	i {
+		color: #2dcf84;
+		margin-bottom: 5px;
+	}
+	.counter {
+		font-size: 45px;
+		margin: 10px 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.uikit-counters-1 {
+		.counter-container {
+			grid-template-columns: 1fr;
+			>div {
+				border-bottom: 1px #2dcf84 solid;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
+
