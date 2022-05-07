@@ -14,28 +14,26 @@
 
     ip = (".$_SERVER['REMOTE_ADDR']."&format=json)); 
 
-    data = {
     $country = $url->countryName;  // user country        
     $city=$url->cityName;       // city
     $region = $url->regionName;   // regoin
     $latitude = $url->latitude;    //lat and lon
     $longitude = $url->longitude;
-            }
 
 // get time
     date_default_timezone_set('UTC');
     $date = date("Y-m-d");
     $time = date("H:i:s");
 
-<script>
-// Requiring fs module in which
-// writeFile function is defined.
-const fs = require('fs')
+// <script>
+// // Requiring fs module in which
+// // writeFile function is defined.
+// const fs = require('fs')
 
-// Write data in 'Output.txt' .
-fs.writeFile('Output.txt', data, (err) => {
+// // Write data in 'Output.txt' .
+// fs.writeFile('Output.txt', data, (err) => {
     
-    // In case of a error throw err.
-    if (err) throw err;
-})
-</script>
+//     // In case of a error throw err.
+//     if (err) throw err;
+// })
+// </script>
