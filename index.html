@@ -18,13 +18,25 @@
     <meta name="icon" content="MirrorAnchor.png" />
     <meta name="author" content="Esvin Joshua">
     <title>MirrorAnchor</title>
+
+    <!--favicon-->
     <link rel="icon" href="MirrorAnchor.png">
+    <!--google analytics script-->
     <script
             src="https://kit.fontawesome.com/ccbd4d6bc1.js"
             crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/main.css" />
 
+<!--preloader-->
+
+<!-- <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div> -->
 
 </head>
 <body>
@@ -81,7 +93,8 @@
             <h2>ABOUT ME</h2>
             <p>
             <div>
-                I'm Esvin Joshua, a 16 year old developer from India. I'm a creative problem solving enthusiast who has a constantly growing love for programming
+                I'm Esvin Joshua, a 16 year old developer from India.
+                I'm a creative problem-solving enthusiast who has a constantly growing love for programming
             </div>
             <p>
                 🏫: I'm a grade 11, College Student. 📚
@@ -89,16 +102,12 @@
             <p>
                 🔭: I’m currently working on many small projects. 🤏
             </p>
-                🌱: I’m currently learning Kotlin, Jetpack Compose, MVVM. 🧠💻🤖
-           <!--  <p>
-                🤔: I’m looking for input with anything I am currently working on! 😄
-            </p> -->
+
             <p>
                 💬: Ask me about Python, Life in India
             </p>
             <p>
                 😄: Pronouns: He/Him 👦
-            </p>
             </p>
         </div>
     </div>
@@ -117,16 +126,16 @@
             </p>
             <p>
                 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
-                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-                <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+                <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white">
                 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
                 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
-                <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white">
-                <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-                <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white">
-                <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
-                <img src="https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white">
+                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
                 <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
+                <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+<!--                <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">-->
+<!--                <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white">-->
+<!--                <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">-->
+                <img src="https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white">
             </p>
             <p>
                 The software I use or know how to use. (Sorted by proficiency)
@@ -299,6 +308,28 @@
 
             <a href="https://www.github.com/devjoshua312"><img src="images/github_white_scaled.png"></a>
 
+            <div id="disqus_thread"></div>
+                <script>
+                /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    
+                    */
+
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://devjoshua312.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
             <script 
             data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="joshuaesvin" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can buy me a Coffee." data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18">
                 
@@ -381,5 +412,6 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+<script id="dsq-count-scr" src="//devjoshua312.disqus.com/count.js" async></script>
 </body>
 </html>
